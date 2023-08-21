@@ -1,0 +1,1262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello, world!</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- font awsom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awsom -->
+
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- chart js -->
+
+    <!--scroll bar style-->
+    <style>
+      ::-webkit-scrollbar {
+        width: 1px;
+      }
+
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 0px #d80039;
+        border-radius: 0px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 0px;
+        background-color: #d80039;
+        -webkit-box-shadow: inset 0 0 1px #d80039;
+      }
+    </style>
+    <!--scroll bar style-->
+
+  </head>
+  <body>
+    
+    <!-- ===========================================
+         =========================================== -->
+
+<!-- nav bar -->
+<div class="container position-relative" style="z-index: 999;">
+  <div class="row">
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-2">
+      <div class="logo" style="width: 150px;">
+        <a href="#">
+          <img class="d-block" src="img/logo.png" alt="" style="width: 150px;">
+        </a>
+      </div>
+    </div>
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mt-3 text-end">
+      <div class="row">
+        <div class="nav_right">
+          <!-- ========= -->
+          <a href="#">
+            <img src="img/facebook.png" alt="" class="icon">
+          </a>
+          <!-- ========= -->
+          <a href="#">
+            <img src="img/instagram.png" alt="" class="icon">
+          </a>
+          <!-- ========= -->
+          <a href="#">
+            <img src="img/twitter.png" alt="" class="icon">
+          </a>
+          <!-- ========= -->
+          <a href="#">
+            <img src="img/youtube.png" alt="" class="icon">
+          </a>
+          <!-- ========= -->
+          
+          <a href="#" class="scl_logo ms-2">
+            <img src="img/graduate.png" alt="">
+            NITFRIX SCHOOL
+          </a>
+
+          <!-- ======== -->
+
+          <button class="btn btn-primary p-0 px-2 ms-2 menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <img src="img/hamburger.png" alt="" class="d-block" style="width: 24px; height: 15px;">
+            <p style="font-size: 10px; color: white;">Menu</p>
+          </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               ...
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nav bar end -->
+
+<!-- ========================== -->
+    
+<!-- Carousel wrapper -->
+<div id="carouselVideoExample" class="carousel slide carousel-fade position-absolute fixed-top" style="z-index: -50;" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <!-- <div class="carousel-indicators">
+    <button type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div> -->
+
+  <!-- Inner -->
+
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active" style="height: 100vh;">
+      <video class="w-100" autoplay loop muted style>
+        <source src="img/slider.mp4" type="video/mp4" />
+      </video>
+
+      <!-- =============== -->
+
+      <div class="caption_right">
+        <a href="#">
+          <h4 class="looking_job d-block">
+            Im looking <br>
+            for Job</h4>
+        </a>
+      
+
+      <!-- =============== -->
+
+      
+        <a href="#">
+          <h4 class="looking_candidate d-block mt-2">
+            Im Looking <br>
+            for Candidates
+            </h4>
+        </a>
+
+      </div>
+
+      <!-- =============== -->
+
+      <div class="carousel-caption caption_left">
+        <h1>317,182</h1>
+        <h3 style="color: #070606;">Vacancies in the USA</h3>
+        <p style="color: #070606;">
+          Lorem ipsum dolor sit amet consetetur  sadipscing elitr sed <br>
+          diam nonumy eirmod tempor invidunt ut labore et dolore <br>
+          magna aliquyam erat.
+        </p>
+      </div>
+
+    <!-- Single item -->
+    <!-- <div class="carousel-item">
+      <video class="img-fluid" autoplay loop muted>
+        <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div> -->
+
+    <!-- Single item -->
+    <!-- <div class="carousel-item">
+      <video class="img-fluid" autoplay loop muted>
+        <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4" type="video/mp4" />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        </p>
+      </div>
+    </div> -->
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <!-- <button class="carousel-control-prev" type="button" data-mdb-target="#carouselVideoExample"
+    data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselVideoExample"
+    data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+</div>
+
+<!-- Carousel wrapper -->
+
+<!-- ========================== -->
+
+<!-- who we are section -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xxl-11 offset-xxl-1 col-xl-11 offset-xl-1 col-lg-11 offset-lg-1 col-md-12 col-sm-12">
+      <div class="row">
+        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12">
+          
+          <h2 class="mt-5">
+            Who <span style="color: #d80039;"> We are</span>
+          </h2>
+
+          <h5>NITFRIX is a Trustworthy Place To Find Your Dream Job</h5>
+          
+          <p class="mt-3">
+            Inventive isn’t simply part of our name, it’s our main event and how we live. Imagination drives us to exceed expectations consistently. That is the reason we endeavor to speak to the business’ most splendid personalities — and interface them with our customers, who are searching for the privilege talent.As a customer, your time is valuable.
+            <br> <br>
+            We comprehend the innovative procedure since we’ve been there, which makes working with us so natural. Nitfrix guarantees we comprehend your requirements so we can get you the ability you have to get the outcomes you need, and meet your due date.
+            <br> <br>
+            We regard your abilities and aptitudes as an applicant, so we guarantee we have an exhaustive comprehension of them. This enables us to coordinate you with circumstances where you can contribute and propel your profession. We work with you to locate the correct independent or full-time opportunity, in the correct condition, with the correct culture, vision, and group.
+          </p>
+
+          <h5 class="mt-4" style="color: #d80039;">
+            THE BEST THING IS WE LOVE YOUR GROWTH!
+          </h5>
+
+        </div>
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 about_img">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- who we are section end-->
+
+<!-- ========================= -->
+
+<!-- stats section -->
+
+<div class="container mt-5">
+    <div class="row"> 
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-end my-auto">
+        <h3>COMMON NONVERBAL MISTAKES MADE DURING JOB INTERVIEWS</h3>
+        
+        <div class="row">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">67%</h1>
+            <p class="pct_text">Fail to make eye contact</p>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+        </div>
+
+        <!-- ============chart 2================ -->
+
+        <div class="row">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">
+              47%
+            </h1>
+            <p class="pct_text">
+                Have little knowledge of
+                the company
+            </p>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart2" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+        </div>
+
+        <!-- ============chart 3================ -->
+
+        <div class="row">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">
+              38%
+            </h1>
+            <p class="pct_text">
+              Don’t Smile
+            </p>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart3" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+        </div>
+
+        <!-- ============chart 4================ -->
+
+        <div class="row">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">
+              33%
+            </h1>
+            <p class="pct_text">
+              Have bad posture
+            </p>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart4" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- =========================== -->
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <img src="img/stats.png" alt="" class="w-100 d-block">
+      </div>
+
+      <!-- ============================ -->
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 my-auto">
+        <h3>statistics show that first impressionsare determined by.</h3>
+
+        <!-- ============chart 5================ -->
+
+        <div class="row">  
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart5" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">
+              55%
+            </h1>
+            <p class="pct_text">
+              The way you dress, act, and walk through the door
+            </p>
+          </div>
+        </div>
+
+        <!-- ============chart 6================ -->
+
+        <div class="row">  
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart6" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">
+              38%
+            </h1>
+            <p class="pct_text">
+              The quality of your voice, grammar, and confidence
+            </p>
+          </div>
+        </div>
+
+        <!-- ============chart 7================ -->
+
+        <div class="row">  
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+            <canvas id="myChart7" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
+          </div>
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+            <h1 class="pct">
+              7%
+            </h1>
+            <p class="pct_text">
+              The words you choose to say
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>  
+
+<div class="container-fluid stats_sec">
+  </div>
+
+<!-- stats section end -->
+
+<!-- ========================== -->
+
+<!-- salary section -->
+
+<div class="container-fluid salary_sec p-0 mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mt-5">
+          <h2 style="color: white;">
+            Know Your Salary Scale
+          </h2>
+          <p style="color: white;">
+            Lorem ipsum dolor sit amet consetetur  sadipscing elitr sed diam nonumy
+            <br>eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+          </p>
+
+          <ul class="list-group list-group-horizontal mt-4" style="font-weight: bold;">
+            <li class="list-group-item job">Job Title</li>
+            <li class="list-group-item range text-light">Range</li>
+            <li class="list-group-item average text-light">Average</li>
+          </ul>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item job">Software Engineer</li>
+            <li class="list-group-item range">$62K-$132K</li>
+            <li class="list-group-item average">$62K-$132K</li>
+          </ul>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item job">Senior Software Engineer</li>
+            <li class="list-group-item range">$83K-$157K</li>
+            <li class="list-group-item average">$118,613</li>
+          </ul>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item job">Network Engineer</li>
+            <li class="list-group-item range">$49k - $102k</li>
+            <li class="list-group-item average">$69,884</li>
+          </ul>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item job">Projecy Manager, Information Technology</li>
+            <li class="list-group-item range">$56k - $123k</li>
+            <li class="list-group-item average">$86,749</li>
+          </ul>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item job">Software Engineer</li>
+            <li class="list-group-item range">$62K-$132K</li>
+            <li class="list-group-item average">$62K-$132K</li>
+          </ul>
+
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item job">Senior Software Engineer</li>
+            <li class="list-group-item range">$83K-$157K</li>
+            <li class="list-group-item average">$118,613</li>
+          </ul>
+
+          <div class="text-end mt-4">
+            <a href="#">
+              <button class="btn btn-primary light_blue_btn">
+                Find more salary scales
+              </button>
+            </a>
+          </div>
+
+        </div>
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 ">
+          <img src="img/salary_img.png" alt="" class="w-75 d-block salary_img position-relative">
+        </div>
+      </div>
+    </div>
+    <div class="text-end p-0">
+      <img src="img/salary_bg.png" alt="" class="salary_bg">
+    </div>
+  </div>  
+
+<!-- salary section end -->
+
+<!-- ========================== -->
+
+<!-- tips & guid lines section -->
+
+<div class="container mt-5">
+  <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 col-sm-12 col-12">
+    <div class="tips_heading">
+      <h2>Tips & <span style="color: #d80039;">Guid lines</span></h2>
+      <h3 style="color: #070606; font-weight: normal;">Need More Professional tips on Your next Job Hunt?</h3>
+      
+      <div class="row mt-5">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <p class="tips_heading">
+                Lorem Ipsum is simply of 
+                the printing industry. 
+              </p>
+              <p>Lorem ipsum dolor sit amet 
+                consetetur  sadipscing elitr 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================== -->
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <p class="tips_heading">
+                Lorem Ipsum is simply of 
+                the printing industry. 
+              </p>
+              <p>Lorem ipsum dolor sit amet 
+                consetetur  sadipscing elitr 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- ============================== -->
+      <!-- ============================== -->
+
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <p class="tips_heading">
+                Lorem Ipsum is simply of 
+                the printing industry. 
+              </p>
+              <p>Lorem ipsum dolor sit amet 
+                consetetur  sadipscing elitr 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================== -->
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <p class="tips_heading">
+                Lorem Ipsum is simply of 
+                the printing industry. 
+              </p>
+              <p>Lorem ipsum dolor sit amet 
+                consetetur  sadipscing elitr 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- ============================== -->
+      <!-- ============================== -->
+
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <p class="tips_heading">
+                Lorem Ipsum is simply of 
+                the printing industry. 
+              </p>
+              <p>Lorem ipsum dolor sit amet 
+                consetetur  sadipscing elitr 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================== -->
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="row">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+              <p class="tips_heading">
+                Lorem Ipsum is simply of 
+                the printing industry. 
+              </p>
+              <p>Lorem ipsum dolor sit amet 
+                consetetur  sadipscing elitr 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================== -->
+      <!-- ============================== -->
+
+    </div>
+  </div>
+</div>
+
+<!-- tips & guid lines section end -->
+
+<!-- ========================== -->
+
+<!-- visit us section -->
+
+<div class="container-fluid p-0">
+  <div class="visit_sec text-center">
+    <h3 style="color: white; font-weight: normal;">
+      Need More Professional tips on Your next Job Hunt?
+    </h3>
+    <h2 style="color: white;">
+      Visit NITFRIX School
+    </h2>
+  </div>
+</div>
+
+<div class="container-fluid mt-3 visit_us">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-6 offset-xxl-6 col-xl-6 offset-xl-6 col-lg-6 offset-lg-6 col-md-12 col-sm-12">
+        <h2>
+          Featured Jobs <span style="color: #d80039;">for you</span> 
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consetetur  sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+        </p>
+        
+        <div class="row mt-4">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+            <img src="img/badge1.png" alt="" class="d-block badge">
+          </div>
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 m-auto">
+            <p class="job_title">
+              Software Engineer
+            </p>
+            <p class="job_details">
+              <span style="color: #070606; margin-right: 5px;">Skelia</span> Private <span style="color: #d80039; border-left: 1px solid #a19d99; padding-left: 5px;">Full Time</span> 
+            </p>
+            <p>
+              <img src="img/location.png" alt="" style="width: 18px;">
+              32, Walsh Street, USA
+            </p>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 m-auto text-end">
+            <a href="#">
+              <button class="btn btn-primary light_blue_btn apply_bt">
+                Apply Now
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <hr>
+        <!-- =========================== -->
+
+        <div class="row mt-4">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+            <img src="img/badge2.png" alt="" class="d-block badge">
+          </div>
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-6 m-auto">
+            <p class="job_title">
+              Marketing Director
+            </p>
+            <p class="job_details">
+              <span style="color: #070606; margin-right: 5px;">Plaxonic Technologies</span> Private <span style="color: #d80039; border-left: 1px solid #a19d99; padding-left: 5px;">Full Time</span> 
+            </p>
+            <p>
+              <img src="img/location.png" alt="" style="width: 18px;">
+              32, Walsh Street, USA
+            </p>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 m-auto text-end">
+            <a href="#">
+              <button class="btn btn-primary light_blue_btn apply_bt">
+                Apply Now
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <hr>
+        <!-- =========================== -->
+
+        <div class="row mt-4">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+            <img src="img/badge3.png" alt="" class="d-block badge">
+          </div>
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 m-auto">
+            <p class="job_title">
+              Digital Maketing Director
+            </p>
+            <p class="job_details">
+              <span style="color: #070606; margin-right: 5px;">Xact IT Solutions</span> Private <span style="color: #d80039; border-left: 1px solid #a19d99; padding-left: 5px;">Full Time</span> 
+            </p>
+            <p>
+              <img src="img/location.png" alt="" style="width: 18px;">
+              32, Walsh Street, USA
+            </p>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 m-auto text-end">
+            <a href="#">
+              <button class="btn btn-primary light_blue_btn apply_bt">
+                Apply Now
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <hr>
+        <!-- =========================== -->
+
+        <div class="row mt-4">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+            <img src="img/badge2.png" alt="" class="d-block badge">
+          </div>
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-6 m-auto">
+            <p class="job_title">
+              Marketing Director
+            </p>
+            <p class="job_details">
+              <span style="color: #070606; margin-right: 5px;">Plaxonic Technologies</span> Private <span style="color: #d80039; border-left: 1px solid #a19d99; padding-left: 5px;">Full Time</span> 
+            </p>
+            <p>
+              <img src="img/location.png" alt="" style="width: 18px;">
+              32, Walsh Street, USA
+            </p>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 m-auto text-end">
+            <a href="#">
+              <button class="btn btn-primary light_blue_btn apply_bt">
+                Apply Now
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <hr>
+        <!-- =========================== -->
+
+        <div class="row mt-4">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+            <img src="img/badge3.png" alt="" class="d-block badge">
+          </div>
+          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7 m-auto">
+            <p class="job_title">
+              Digital Maketing Director
+            </p>
+            <p class="job_details">
+              <span style="color: #070606; margin-right: 5px;">Xact IT Solutions</span> Private <span style="color: #d80039; border-left: 1px solid #a19d99; padding-left: 5px;">Full Time</span> 
+            </p>
+            <p>
+              <img src="img/location.png" alt="" style="width: 18px;">
+              32, Walsh Street, USA
+            </p>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 m-auto text-end">
+            <a href="#">
+              <button class="btn btn-primary light_blue_btn apply_bt">
+                Apply Now
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <hr>
+        <!-- =========================== -->
+
+        <div class="text-end">
+          <a href="#">
+            <button class="btn btn-primary light_blue_btn apply_bt">
+              View all featured jobs
+            </button>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- visit us section end -->
+
+<!-- ========================= -->
+
+<!-- job categories section -->
+
+<div class="catrgories_heading text-center mt-5">
+  <h2>
+    <span style="color: #d80039;">Popular Job</span> Categories
+  </h2>
+  <p>
+    One of our jobs has some kind of flexibility option - such as telecommutinga part-time 
+    <br>schedule or a flexible or flextime schedule.
+  </p>
+</div>
+
+<div class="container mt-5">
+  <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+            <img src="img/job1.png" alt="" class="d-block w-100">
+          </div>
+          <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
+            <h4>Administration, Business and  
+              Management</h4>
+              <p>
+                <span class="jobs pe-2">28 Jobs</span> Part Time / Full time
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================================= -->
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 m-auto">
+            <img src="img/job2.png" alt="" class="d-block w-100">
+          </div>
+          <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 m-auto">
+            <h4>Egineering</h4>
+              <p>
+                <span class="jobs pe-2">35 Jobs</span> Part Time / Full time
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================================== -->
+
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="row">
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+            <img src="img/job3.png" alt="" class="d-block w-100">
+          </div>
+          <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9 m-auto">
+            <h4>Computing and ICT</h4>
+              <p>
+                <span class="jobs pe-2">225 Jobs</span> Part Time / Full time
+              </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- job categories section end -->
+
+<!-- ========================== -->
+
+<!-- testimonial -->
+
+<div class="container-fluid testimonial_sec">
+  <div class="container testimonial">
+    <div class="offset-xxl-4 col-xxl-8  offset-xl-4 col-xl-8 offset-lg-4 col-lg-8 offset-md-4 col-md-8 col-sm-12 col-12">
+      <h2>
+        What <span style="color: #d80039;">our clients</span> are saying about us
+      </h2>
+      
+      <!-- ================== -->
+
+    <div id="carouselExampleCaptions" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  
+    <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="testermonial_text">
+            <h5 class="m-0">Lorem Ipsum</h5>
+            <p class="testimonial_red_text">LOREM IPSUM IS SIMPLY DUMMY </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="testermonial_text">
+            <h5 class="m-0">Lorem Ipsum</h5>
+            <p class="testimonial_red_text">LOREM IPSUM IS SIMPLY DUMMY </p>
+            <p>Some representative placeholder content for the first slide.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ -->
+    
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="testermonial_text">
+            <h5 class="m-0">Lorem Ipsum</h5>
+            <p class="testimonial_red_text">LOREM IPSUM IS SIMPLY DUMMY </p>
+            <p>Some representative placeholder content for the first slide.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="testermonial_text">
+            <h5 class="m-0">Lorem Ipsum</h5>
+            <p class="testimonial_red_text">LOREM IPSUM IS SIMPLY DUMMY </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= -->
+
+  </div>
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+</div>
+      <!-- ================== -->
+
+    </div>
+  </div>
+</div>
+
+<!-- testimonial end -->
+
+<!-- ========================== -->
+
+<!-- contact sec -->
+
+<div class="container mt-4 mb-5">
+  <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+    <div class="row">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 contact_left">
+        <div class="contact_text text-center">
+            
+          <a href="#">
+              <img class="" src="img/w_logo.png" alt="" style="width: 200px;">
+          </a>
+  
+          <p style="color: white; margin-top: 10px;">
+            Lorem ipsum dolor sit amet consetetur  sadipscing elitr sed <br>
+            diam nonumy eirmod tempor invidunt ut labore et <br>
+            dolore magna aliquyam erat.
+          </p>
+          
+          <div class="row mt-3">
+            <div class="nav_right">
+              <!-- ========= -->
+              <a href="#">
+                <img src="img/facebook.png" alt="" class="icon">
+              </a>
+              <!-- ========= -->
+              <a href="#">
+                <img src="img/instagram.png" alt="" class="icon">
+              </a>
+              <!-- ========= -->
+              <a href="#">
+                <img src="img/twitter.png" alt="" class="icon">
+              </a>
+              <!-- ========= -->
+              <a href="#">
+                <img src="img/youtube.png" alt="" class="icon">
+              </a>
+              <!-- ========= -->
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 contact_right">
+        <div class="row">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <h4>
+              <a href="#" class="links">
+                Home
+              </a>
+            </h4>
+            <h4 class="mt-3">
+              <a href="#" class="links">
+                Jobs
+              </a>
+            </h4>
+            <h4 class="mt-3">
+              <a href="#" class="links">
+                Salary Scale
+              </a>
+            </h4>
+            <h4 class="mt-3">
+              <a href="#" class="links">
+                Services
+              </a>
+            </h4>
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <h4>
+              <a href="#" class="links">
+                Blog
+              </a>
+            </h4>
+            <h4 class="mt-3">
+              <a href="#" class="links">
+                Netflix School
+              </a>
+            </h4>
+            <h4 class="mt-3">
+              <a href="#" class="links">
+                About us
+              </a>
+            </h4>
+            <h4 class="mt-3">
+              <a href="#" class="links">
+                Contact Us
+              </a>
+            </h4>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p style="color: #070606; font-family: 'Stag';">
+            Centerville,Viriginia <br>     
+            contact@nitfrix.com  | <span><a href="tel:+94256365225" style="color: #070606;">+1(571) 572-2956</a></span>     
+          </p>
+        </div>
+        <div class="copyright">
+          <p style="font-size: 13px; color: #7f7b78;">
+            Terms & Conditions  |  Privacy Policy
+          </p>
+          <p style="font-size: 11px;">
+            Copyright © 2021 Nitfrix
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- contact sec end -->
+
+<!-- ========================== -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  <!-- charts js -->
+
+  <!-- 1 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [67, 33,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+  <!-- 2 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [47, 63,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart2", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+  <!-- 3 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [38, 62,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart3", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+  <!-- 4 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [33, 67,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart4", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+  <!-- 5 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [55, 45,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart5", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+  <!-- 6 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [38, 62,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart6", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+  <!-- 7 -->
+
+  <script>
+    var xValues = ["", "",];
+    var yValues = [7, 93,];
+    var barColors = [
+      "#c0d9f2",
+      "#f8c3ca",
+    ];
+    
+    new Chart("myChart7", {
+      type: "doughnut",
+      data: {
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+
+
+  </body>
+</html>
