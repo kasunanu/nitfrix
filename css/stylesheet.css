@@ -4,6 +4,10 @@
 @import url('../fonts/stag_stylesheet.css');
 @import url('../fonts/mukta_stylesheet.css');
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'stag';
   letter-spacing: 1px;
@@ -67,16 +71,138 @@ h5{
 
 /* nav bar */
 
-.offcanvas-end {
+.wrapper {
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  border-left: 1px solid rgba(0,0,0,.2);
-  transform: translateX(100%);
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  background: rgba(83, 83, 158, .9);
+  clip-path: circle(1px at calc(100% - 86px) 32px);
+  transition: all 0.3s ease-in-out;
 }
 
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 2;
+  right: -37px;
+  /* left: 20px; */
+  top: 11px;
+  height: 39px;
+  width: 39px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+  background: #53539e;
+  transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .menu-btn{
+  color: #fff;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  /* border-radius: 50px; */
+  /* background: #000; */
+  position: relative;
+  line-height: 40px;
+  transition: all 0.25s ease-in-out;
+}
+
+.wrapper ul li a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d80039;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.wrapper ul li a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.wrapper ul li a:hover{
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
 
 /* nav bar end */
+
+.carousel_video{
+  object-fit: cover;
+  height: 100vh;
+}
 
 .nav_right a{
   text-decoration: none;
@@ -221,7 +347,7 @@ h5{
 }
 
 .salary_img{
-  margin-top: 68px;
+  margin-top: 66px;
 }
 
 .salary_bg{
