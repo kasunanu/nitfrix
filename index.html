@@ -267,11 +267,11 @@
         <h3>COMMON NONVERBAL MISTAKES MADE DURING JOB INTERVIEWS</h3>
         
         <div class="row">
-          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto">
+          <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 my-auto"  id="stats_section">
             <h1 class="pct">67%</h1>
             <p class="pct_text">Fail to make eye contact</p>
           </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0"  id="stats_section">
             <canvas id="myChart" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
           </div>
         </div>
@@ -288,7 +288,7 @@
                 the company
             </p>
           </div>
-          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0">
+          <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 p-0"  id="stats_section">
             <canvas id="myChart2" class="chart" style="width:100%; max-width:120px; height:130px;"></canvas>
           </div>
         </div>
@@ -1148,188 +1148,139 @@
   
   <!-- charts js -->
 
-  <!-- 1 -->
-
   <script>
     var xValues = ["", "",];
-    var yValues = [67, 33,];
+    var yValues = [ "", "",];
     var barColors = [
       "#c0d9f2",
       "#f8c3ca",
     ];
+
+    function initializeChart() {
+        var ctx = document.getElementById('myChart').getContext('2d');
+        
+        var myChart = new Chart("myChart", {
+            type: "doughnut",
+            data: {
+            datasets: [{
+            backgroundColor: barColors,
+            data: [33, 67],
+            }]
+          },
+            options: {
+            title: {
+            display: true,
+            }
+          }
+        });
+
+
+        var myChart = new Chart("myChart2", {
+           type: "doughnut",
+           data: {
+           datasets: [{
+           backgroundColor: barColors,
+           data: [63,47],
+           }]
+          },
+           options: {
+           title: {
+           display: true,
+           }
+          }
+        });
+
+
+        var myChart = new Chart("myChart3", {
+           type: "doughnut",
+           data: {
+           datasets: [{
+           backgroundColor: barColors,
+           data: [62,38],
+           }]
+          },
+           options: {
+           title: {
+           display: true,
+           }
+          }
+        });
+
     
-    new Chart("myChart", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-        }
-      }
-    });
-    </script>
+        var myChart = new Chart("myChart4", {
+           type: "doughnut",
+           data: {
+           datasets: [{
+           backgroundColor: barColors,
+           data: [67,33],
+           }]
+          },
+           options: {
+           title: {
+           display: true,
+           }
+          }
+        });
 
-  <!-- 2 -->
 
-  <script>
-    var xValues = ["", "",];
-    var yValues = [47, 63,];
-    var barColors = [
-      "#c0d9f2",
-      "#f8c3ca",
-    ];
+        var myChart = new Chart("myChart5", {
+           type: "doughnut",
+           data: {
+           datasets: [{
+           backgroundColor: barColors,
+           data: [45,55],
+           }]
+          },
+           options: {
+           title: {
+           display: true,
+           }
+          }
+        });
     
-    new Chart("myChart2", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-        }
+
+        var myChart = new Chart("myChart6", {
+           type: "doughnut",
+           data: {
+           datasets: [{
+           backgroundColor: barColors,
+           data: [62,38],
+           }]
+          },
+           options: {
+           title: {
+           display: true,
+           }
+          }
+        });
+        
+
+        var myChart = new Chart("myChart7", {
+           type: "doughnut",
+           data: {
+           datasets: [{
+           backgroundColor: barColors,
+           data: [93,7],
+           }]
+          },
+           options: {
+           title: {
+           display: true,
+           }
+          }
+        });
+      
+      
       }
-    });
-    </script>
-
-  <!-- 3 -->
-
-  <script>
-    var xValues = ["", "",];
-    var yValues = [38, 62,];
-    var barColors = [
-      "#c0d9f2",
-      "#f8c3ca",
-    ];
-    
-    new Chart("myChart3", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
+    var chartSection = document.getElementById('stats_section');
+    var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+            initializeChart(); // Load the chart when section comes into view
         }
-      }
     });
+
+    observer.observe(chartSection); // Start observing the chart section
     </script>
-
-  <!-- 4 -->
-
-  <script>
-    var xValues = ["", "",];
-    var yValues = [33, 67,];
-    var barColors = [
-      "#c0d9f2",
-      "#f8c3ca",
-    ];
-    
-    new Chart("myChart4", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-        }
-      }
-    });
-    </script>
-
-  <!-- 5 -->
-
-  <script>
-    var xValues = ["", "",];
-    var yValues = [55, 45,];
-    var barColors = [
-      "#c0d9f2",
-      "#f8c3ca",
-    ];
-    
-    new Chart("myChart5", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-        }
-      }
-    });
-    </script>
-
-  <!-- 6 -->
-
-  <script>
-    var xValues = ["", "",];
-    var yValues = [38, 62,];
-    var barColors = [
-      "#c0d9f2",
-      "#f8c3ca",
-    ];
-    
-    new Chart("myChart6", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-        }
-      }
-    });
-    </script>
-
-  <!-- 7 -->
-
-  <script>
-    var xValues = ["", "",];
-    var yValues = [7, 93,];
-    var barColors = [
-      "#c0d9f2",
-      "#f8c3ca",
-    ];
-    
-    new Chart("myChart7", {
-      type: "doughnut",
-      data: {
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-        }
-      }
-    });
-    </script>
-
 
   </body>
 </html>
